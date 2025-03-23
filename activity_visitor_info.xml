@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".VisitorInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visitor Information"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🕒 Opening Hours"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday - Sunday: 10:00 AM - 6:00 PM"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎟️ Ticket Prices"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Adults: RM14\n• Students: RM7\n• Seniors: RM7\n• Children (under 6): Free"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍 Location"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Museum of Islamic Art Malaysia\nJalan Lembah Perdana, Kuala Lumpur"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnOpenMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open in Google Maps"
+            android:textColor="@color/text_color"
+            android:backgroundTint="@color/gold"
+            android:layout_marginBottom="20dp"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            app:menu="@menu/bottom_nav_menu"/>
+
+    </LinearLayout>
+
+</ScrollView>
